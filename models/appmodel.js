@@ -9,7 +9,7 @@ const inventarioHATEOAS = async (inventario) => {
     name: m.nombre,
     href: `/joyas/inventario/${m.id}`,
     }
-    }).slice(0, 4)
+    }).slice(0, 6)
     const totalJoyas = inventario.length;
     let stockTotal = inventario.map(m => m.precio).reduce((prev, curr) =>prev + curr, 0);
     const HATEOAS = {
