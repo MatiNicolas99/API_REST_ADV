@@ -9,7 +9,7 @@ class Server {
 
         this.app = express();
         this.postPath = '/joyas';
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.middlewares();
         this.routes();
     }
